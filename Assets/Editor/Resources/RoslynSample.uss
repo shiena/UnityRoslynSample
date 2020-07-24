@@ -1,0 +1,9 @@
+﻿.button {
+    -unity-text-align: middle-left;
+}
+
+.box {
+    margin: 10px;
+    padding: 4px;
+    border-color: darkgray;
+}
