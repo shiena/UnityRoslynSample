@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Unity2019.4.5f1
+- Unity2019.4.7f1
 
 ## Samples
 
