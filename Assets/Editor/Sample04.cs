@@ -5,9 +5,9 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 public class Sample04
 {
-    public static (string, string) OnClick()
+    public static string OnClick(out string code)
     {
-        string code =
+        code =
             @"using System;
 using System.Collections;
 using System.Linq;
@@ -37,6 +37,6 @@ namespace HelloWorld
             select methodDeclaration.ParameterList.Parameters.First();
         var argsParameter2 = firstParameters.Single();
 
-        return (argsParameter2.ToString(), code);
+        return argsParameter2.ToString();
     }
 }

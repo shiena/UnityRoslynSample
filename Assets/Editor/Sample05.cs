@@ -5,9 +5,9 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 public class Sample05
 {
-    public static (List<UsingDirectiveSyntax>, string) OnClick()
+    public static List<UsingDirectiveSyntax> OnClick(out string code)
     {
-        string code =
+        code =
             @"using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,7 +43,7 @@ namespace TopLevel
         var collector = new UsingCollector();
         collector.Visit(root);
 
-        return (collector.Usings, code);
+        return collector.Usings;
     }
 
     class UsingCollector : CSharpSyntaxWalker

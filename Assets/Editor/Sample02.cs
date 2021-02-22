@@ -3,10 +3,9 @@ using Microsoft.CodeAnalysis.CSharp.Scripting;
 
 public class Sample02
 {
-    public static (Task<int>, string) OnClick()
+    public static Task<int> OnClick(out string code)
     {
-        string code = "1 + 2";
-        var result = CSharpScript.EvaluateAsync<int>(code);
-        return (result, code);
+        code = "1 + 2";
+        return CSharpScript.EvaluateAsync<int>(code);
     }
 }
