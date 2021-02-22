@@ -1,21 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:engine="UnityEngine.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
 >
-    <engine:Box class="box">
-        <engine:Button text="Evaluate a C# expression" class="button" name="sample01"/>
-        <engine:Button text="Evaluate a C# expression (strongly-typed)" class="button" name="sample02"/>
-        <engine:Button text="Parameterize a script" class="button" name="sample03"/>
-        <engine:Button text="Query Methods" class="button" name="sample04"/>
-        <engine:Button text="SyntaxWalkers" class="button" name="sample05"/>
-        <engine:Box class="box">
-            <engine:Label text="code"/>
-            <engine:TextField readonly="true" focusable="false" multiline="true" binding-path="code"/>
-            <engine:Label text="result"/>
-            <engine:TextField readonly="true" focusable="false" multiline="true" binding-path="result"/>
-        </engine:Box>
-    </engine:Box>
-
+    <engine:VisualElement>
+        <engine:ScrollView>
+            <engine:VisualElement>
+                <engine:Button text="Evaluate a C# expression" class="button" name="sample01"/>
+                <engine:Button text="Evaluate a C# expression (strongly-typed)" class="button" name="sample02"/>
+                <engine:Button text="Parameterize a script" class="button" name="sample03"/>
+                <engine:Button text="Query Methods" class="button" name="sample04"/>
+                <engine:Button text="SyntaxWalkers" class="button" name="sample05"/>
+                <engine:Box class="box">
+                    <engine:Label text="code"/>
+                    <engine:TextField readonly="true" focusable="false" multiline="true" binding-path="code"/>
+                    <engine:Label text="result"/>
+                    <engine:TextField readonly="true" focusable="false" multiline="true" binding-path="result"/>
+                </engine:Box>
+            </engine:VisualElement>
+        </engine:ScrollView>
+    </engine:VisualElement>
 </engine:UXML>

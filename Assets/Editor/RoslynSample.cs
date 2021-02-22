@@ -11,12 +11,13 @@ public class RoslynSample : EditorWindow
 
     [SerializeField] private string code = string.Empty;
     [SerializeField] private string result = string.Empty;
+    [SerializeField] private VisualTreeAsset visualTree;
+    [SerializeField] private StyleSheet styleSheet;
 
     private void OnEnable()
     {
         var root = rootVisualElement;
-        root.styleSheets.Add(Resources.Load<StyleSheet>("RoslynSample"));
-        var visualTree = Resources.Load<VisualTreeAsset>("RoslynSample");
+        root.styleSheets.Add(styleSheet);
         visualTree.CloneTree(root);
         root.Bind(new SerializedObject(this));
 
