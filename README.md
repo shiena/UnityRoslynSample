@@ -12,6 +12,8 @@
 - Query Methods
 - SyntaxWalkers
 
+![screenshot](screenshot.png)
+
 see also
 
 - https://docs.unity3d.com/Packages/com.unity.code-analysis@latest/
