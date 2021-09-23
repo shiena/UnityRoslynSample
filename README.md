@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Unity2020.3.0f1
+- Unity2020.3.18f1
 
 ## Samples
 
